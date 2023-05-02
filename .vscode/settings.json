@@ -1,0 +1,18 @@
+{
+    "editor.codeActionsOnSave": {},
+    "workbench.colorCustomizations": {
+        "editor.foreground": "#a83232"
+    },
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control",
+                "settings": {
+                    "foreground": "#ae00ff"
+                }
+            }
+        ]
+    }
+}

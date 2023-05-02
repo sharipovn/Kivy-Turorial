@@ -1,0 +1,114 @@
+#MainWidget:
+# BoxLayoutExample:
+# AnchorLayoutExample:
+# GridLayoutExample:
+StackLayoutExample:
+
+<StackLayoutExample>:
+    #left-right top-bottom
+    orientation: "rl-tb"
+    # Button:
+    #     text: "A"
+    #     size_hint: .2,.2
+    # Button:
+    #     text: "B"
+    #     size_hint: .2,.2
+    # Button:
+    #     text: "C"
+    #     size_hint: .2,.2
+    # Button:
+    #     text: "D"
+    #     size_hint: .2,.2
+    # Button:
+    #     text: "E"
+    #     size_hint: .2,.2
+    # Button:
+    #     text: "F"
+    #     size_hint: .2,.2
+
+
+
+<GridLayoutExample@GridLayout>:
+    # cols:3
+    rows:2
+    Button:
+        text: "A"
+        size_hint:None,1
+        width:"60dp"
+    Button:
+        text: "B"
+    Button:
+        text: "C"
+    Button:
+        text: "D"
+        # size_hint:.5,1
+        size_hint:None,1
+        width:"60dp"
+    Button:
+        text: "E"
+    Button:
+        text: "F"
+
+<AnchorLayoutExample>:
+    #right,left,center
+    anchor_x: 'center'
+    #bottom,top,center
+    anchor_y: 'top'
+    BoxLayout:
+        size_hint: .2,.2
+        Button:
+            text: "A"
+        Button:
+            text: "B"
+
+
+
+<BoxLayoutExample>:
+    # orientation: 'vertical'
+    orientation: 'horizontal'
+    Button:
+        text: "A"
+        # size:"40dp","40dp" nothing  changes
+        #size_hint: 1,.5
+        # size:"100dp","60dp" #take effect #default 100x100
+        # size_hint: None,None
+        #manually
+        # width: "100dp"
+        #mixed
+        size_hint: 0.5,0.5
+        # size_hint: 0.5,None
+        #height: "60dp"
+        #x,center_x,right(0=>1)
+        #y,center_y,top
+        # pos_hint: {'x': .5}
+        #pos_hint: {'center_x': .5}
+        # pos_hint: {'top': 1}
+        pos_hint: {'center_y': 0.5}
+    Button:
+        text: "B"
+        # size_hint: 1,2
+    BoxLayout:
+        orientation: 'vertical'
+        spacing:"10dp"
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"    
+    Label:
+        text: "Something is different"
+
+<MainWidget>:
+    Button:
+        text:"Hello"
+        #size:400,200 #width,heihgt default is 100 in pixels
+        size:"100dp","80dp"
+        pos: "100dp","200dp"
+    Label:
+        text:"Hello2"
+        size:"100dp","80dp"
+        pos: "200dp","300dp"
+        color:0,0,1,1
